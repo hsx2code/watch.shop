@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustWatchThis(Store)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #index {
+            display:flex;
+        }
+        #index > ul {
+            list-style:none;
+            display:flex;
+            flex-direction:column;
+        }
+        #index > ul > li > h1 {
+            border-bottom:1px solid rgb(189, 189, 189);
+            padding-bottom:10px;
+            margin-bottom:0;
+            padding-right:71px;
+            font-weight:350;
+            padding-left:10px;
+        }
+        #index > ul > li {
+            margin-top:0;
+        }
+        #box {
+            width:380px;
+            background-color:#f3f3f3;
+            border:1px solid #ddd;
+        }
+        #size-option {
+            border-bottom:1px solid #ddd;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:15px;
+        }
+        #size {
+            width:350px;
+        }
+        #final-price {
+            background:white;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:15px;
+            padding-right:15px;
+            text-align:end;
+        }
+        h3 {
+            font-weight:lighter;
+            padding-left:105px;
+        }
+        #inform {
+            background-color:white;
+            margin:0px 10px 10px 10px;
+            font-size:13px;
+            max-width:360px;
+            max-height:130px;
+            overflow:scroll;
+            padding: 10px 10px 10px 10px;
+        }
+        #more {
+            font-size:14px;
+            padding-top:7px;
+            margin-left:15px;
+            text-align:end;
+            margin-right:15px;
+            padding-bottom:7px;
+        }
+        #decision {
+            display:flex;
+            align-items:center;
+            justify-content:flex-end;
+            margin-right:15px;
+        }
+        #buy {
+            display:inline;
+            background-color:black;
+            color:white;
+            width:125px;
+            height:25px;
+            border-radius:15px;
+            text-align:center;
+            padding-top:12.5px;
+            padding-bottom:12.5px;
+            font-size:21px;
+            margin-right:10px;
+            font-weight:bold;
+        }
+        #bucket {
+            margin-left:10px;
+            border:1.5px solid rgb(77, 77, 77);
+            padding:9px 12px 9px 12px;
+            border-radius:15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="head">
+            <ul>
+                <div class="header">
+                    <li id="logo"><a href="index.html"><img src="logo.jpeg"></a></li>
+                </div>
+                <div id="right-head" class="header">
+                    <li class="menu">Home</li>
+                    <li class="menu">Store</li>
+                    <li class="menu">About</li>
+                    <li class="menu">More</li>
+                    <li class="menu">Log in</li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div id="index">
+            <img src="7.jpeg" width="500px;" style="max-height:456.586px;">
+            <ul>
+                <li><h1 style="font-size:30px;">The golden fuckin' royal</h1></li> <!--상품 이름-->
+                <li><h3 style="font-size:25px">3,820,000 ~ 4,570,000￦</h3></li> <!--가격-->
+                <div id="box">
+                    <li id="size-option"><select id="size" style="cursor:pointer;" onchange="changePrice(this.value)">
+                        <option value="0">옵션 선택</option>
+                        <option value="1">14K</option>
+                        <option value="2">18K</option>
+                        <option value="3">24K</option>
+                    </select>
+                    </li> <!--사이즈 설정-->
+                    <li id="final-price">0￦</li> <!--총 상품 금액-->
+                    <li id="more" style="cursor:pointer;" onclick="info();">더보기 <span style="font-weight:bold;">+</span></li> <!--구매 및 장바구니-->
+                    <li id="inform" style="display:none;">
+                        롤렉스는 1905년 독일인 한스 윌스도르프(독일어: Hans Wilsdorf)와 그의 사위 알프레드 데이비스(A
+                        lfred Davis)가 영국 런던에 설립하였다. 한스 윌스도르프는 스위스인도 아니었고 시계 장인도 아니었다. 
+                        "윌스도르프 & 데이비스"가 회사의 최초 이름이었고, 사명은 나중에 "롤렉스 시계 회사"(Rolex Watch C
+                        ompany)로 바뀌었다. 이들초창기에는 헤르만 애글러의 스위스제 시계 부속품들을 영국으로 수입해, 데니슨(D
+                        ennison)을 비롯한 다른 여러 케이스 회사의 케이스를 들여와 그 안에 부품을 조립하여 판매하였다. 이와 
+                        같은 초창기 손목시계는 보석상들에게 팔았고, 보석상들은 그들만의 명칭을 다이얼에 새겼다. 한편, 윌스도르프
+                        와 데이비스는 보통 시계 케이스백 안쪽에 "W&D"라는 문구를 새겼다.<br>
+                        <br>
+                        1908년, 한스 윌스도르프와, 미하일 힉만(Michael Hickman)은 상표명 롤렉스(Rolex)를 스위스의 La Ch
+                        aux-de-Fonds에 등록하였다. 이 낱말의 어원은 분명하지 않다. 들리는 이야기로는, 롤렉스라는 단어는 프랑스
+                        어: horlogerie exquise (정교한 시계라는 뜻)에서 따왔다고 한다. 다른 얘기로는, 윌스도르프가 버스를 타
+                        고 있었는데, "롤렉스"라는 단어의 발음이 시계의 태엽을 감을 때 나는 소리처럼 들려, 그 단어로 정한 것이라고
+                         한다.[3] 1912년 윌스도르프 & 데이비스 사는 영국으로부터 스위스로 회사를 이전했다. 윌스도르프는 그들이 만
+                         드는 시계가 적당한 값이었으면 좋겠다는 생각을 갖고 있었으나, 영국에서는 케이스 금속(금, 은)에 붙는 세금과 
+                         수출 관세가 너무 높아, 제조 비용이 너무 든다고 느꼈다고 한다. 그 뒤로 계속, 롤렉스는 스위스 제네바에 본사
+                         를 두고 있다.
+                    </li>
+                </div>
+                    <li id="decision" style="margin-top:15px;"><div style="cursor:pointer;" id="buy">구매하기</div> <div id="bucket"><img style="cursor:pointer;" 
+                    onclick="
+                    if (document.querySelector('#size').value == 0) {
+                            alert ('옵션을 선택해주세요.')
+                        }
+                    else {
+                            alert ('장바구니에 담겼습니다.')
+                        }
+                        "
+                         width="25px;" src="bucket.jpeg"></div></li>
+            </ul>
+        </div>
+        <script>
+            function changePrice(val) {
+                if (val == 1) {
+                    document.getElementById('final-price').innerText='3,820,000￦';
+                }
+                else {
+                    if (val == 2) {
+                        document.getElementById('final-price').innerText='4,120,000￦';
+                    }
+                    else {
+                        if (val == 3) {
+                            document.getElementById('final-price').innerText='4,570,000￦';
+                        }
+                        else {
+                            document.getElementById('final-price').innerText='0￦';
+                        }
+                    }
+                }
+            }
+            function info() {
+                var target = document.querySelector('#inform')
+                if (target.style.display == 'none') {
+                    target.style.display = 'block';
+                }
+                else {
+                    target.style.display = 'none';
+                }
+            }
+        </script>
+    </section>
+</body>
+</html>
